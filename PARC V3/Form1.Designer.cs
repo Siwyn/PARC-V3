@@ -28,21 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.tableauParc = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tableauParc)).BeginInit();
             this.SuspendLayout();
+            // 
+            // tableauParc
+            // 
+            this.tableauParc.AllowUserToAddRows = false;
+            this.tableauParc.AllowUserToDeleteRows = false;
+            this.tableauParc.AllowUserToResizeRows = false;
+            this.tableauParc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.tableauParc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableauParc.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tableauParc.Location = new System.Drawing.Point(12, 272);
+            this.tableauParc.MultiSelect = false;
+            this.tableauParc.Name = "tableauParc";
+            this.tableauParc.ReadOnly = true;
+            this.tableauParc.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tableauParc.Size = new System.Drawing.Size(877, 362);
+            this.tableauParc.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(901, 646);
+            this.Controls.Add(this.tableauParc);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tableauParc)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView tableauParc;
     }
 }
 
